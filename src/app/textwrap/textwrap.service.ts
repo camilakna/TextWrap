@@ -7,10 +7,10 @@ export class TextwrapService implements TextWrapInterface{
 
   constructor() { }
 
-  textWrap(text: string, length: number): string[]{
+  public textWrap(text: string, length: number): string[]{
 
     var teste:string[]; 
-    teste = ["1","2","3","4"]; 
+    teste = [text]; 
     return teste;
   }
 

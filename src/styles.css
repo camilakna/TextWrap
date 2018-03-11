@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+.painel {
+    margin-top: 50px;
+    width: 700px;
+}
+
+.resultado {
+    height: 200px;
+}
+
+.botao {
+    background-color: #d9edf7;
+}
+
