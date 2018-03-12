@@ -9,9 +9,21 @@ export class TextwrapService implements TextWrapInterface{
 
   public textWrap(text: string, length: number): string[]{
 
-    var teste:string[]; 
-    teste = [text]; 
-    return teste;
-  }
+    console.log(text);
+    console.log(length);
+    let stringFormatada: string[] = []; 
 
+    let words = text.split(' ');
+
+    let line:string = "";
+
+   for (let i=0; i<=words.length; i++){
+     if ((line.concat(words[i]).length) > length){
+       stringFormatada.push(line);
+       line = "";
+     }
+     line = line.concat(" " + words[i]);
+   }
+  return stringFormatada;
+  }
 }

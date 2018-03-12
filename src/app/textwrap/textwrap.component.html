@@ -34,10 +34,9 @@
         </fieldset>
         </form>
     </div>
-    <div class="panel-footer resultado">
-      Texto formatado: 
-        {{ retorno }}
-
+    <div class="panel-footer resultado" > 
+      <p>Texto formatado: </p>
+      <p *ngFor="let line of retorno">{{ line }}</p>
     </div>
   </div>
 </div>
